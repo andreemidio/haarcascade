@@ -5,16 +5,15 @@
 #include <iostream>
 
 
-cv::CascadeClassifier face_cascade;
-
 int main() {
 
     cv::VideoCapture capture;
-    int camera_device = 1;
+    int camera_device = 0;
     cv::Mat frame;
 
     std::cout << "Hello, World!" << std::endl;
 
+    cv::CascadeClassifier face_cascade;
 
     capture.open(camera_device, cv::CAP_DSHOW);
 
@@ -38,7 +37,6 @@ int main() {
             break;
         }
     }
-
 
     return 0;
 }

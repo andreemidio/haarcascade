@@ -5,7 +5,7 @@ find_package(OpenCV REQUIRED)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCES main.cpp)
+set(SOURCES source/main.cpp)
 
 #set(HEADERS)
 
